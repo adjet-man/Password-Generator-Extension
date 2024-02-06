@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Generator</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+
+  <style>
+body {
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.password-container {
+  margin-top: 30px;
+}
+
+#password-output {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#generate-button {
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+#generate-button:hover {
+  background-color: #005eaa;
+}
+
+
+  </style>
+</head>
+<body>
+  <h1>Password Generator</h1>
+  <div class="password-container">
+    <input type="text" id="password-output" readonly>
+    <button id="generate-button">Generate Password</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
